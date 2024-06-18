@@ -1,114 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Kamil Kozyra CV</title>
-    <script src="drop.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <img style="margin-top: 10px" src="./images/linkedIn_31.01.2023.jpg" alt="My photo." width="150"/> 
-    <h1>Kamil Kozyra</h1>
-    <h2>O MNIE</h2>
-    <p>
-        Jestem absolwentem studiów magisterskich kierunku budownictwo na Politechnice Krakowskiej, specjalność BIM. Jestem osobą pracowitą, dobrze zorganizowaną i otwartą na nowe wyzwania.
-    </p>
-    <h2>DOŚWIADCZENIE ZAWODOWE</h2>
-    <ul>
-        <li>
-            <h3><a href="./experience/enbud.html">ENBUD sp. z o.o. &emsp; &emsp; &emsp;  &emsp; &emsp; &emsp; &emsp; &nbsp; 11/2023 - 06/2024</a></h3>
-        </li>
-        <li>
-            <h3><a href="./experience/ok.html">OK - Construction sp. z o.o.&emsp; &emsp; &emsp; &emsp; 08/2023 - 10/2023</a></h3>
-        </li>
-        <li>
-            <h3><a href="./experience/atelier.html">BIM Atelier sp. z o.o.&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; 03/2021 - 07/2023</a></h3>
-        </li>
-        <li>
-            <h3><a href="./experience/konstrukcyjna.html">Pracownia Konstrukcyjna S.C.&emsp; &emsp; &emsp; 12/2019 - 08/2020</a></h3>
-        </li>
-        <li>
-            <h3><a href="./experience/eiffage.html">Eiffage Polska Budownictwo &emsp; &emsp; &nbsp; &nbsp; &nbsp; &nbsp; 07/2019 - 09/2019</a></h3>
-        </li>
-    </ul>
-
-    <div class="dropdown">
-        <button onclick="dropFunction3()" class="dropbtn"><h2>WYKSZTAŁCENIE</h2></button>
-        <div id="dropDown3" class="dropdown-content">
-            <h4>Politechnika Krakowska im. Tadeusza Kościuszki &emsp; 02/2020 - 09/2021</h4>
-            <ul style="text-align: center; line-height: 20px;">
-                <li>
-                    Wydział Inżynierii Lądowej 
-                </li>
-                <li>
-                    Kierunek: Budownictwo, specjalność BIM, studia magisterskie
-                </li>
-            </ul> 
-            <h4>Politechnika Krakowska im. Tadeusza Kościuszki &emsp; 10/2016 - 02/2020</h4>
-            <ul style="text-align: center; line-height: 20px;">
-                <li>
-                    Wydział Inżynierii Lądowej 
-                </li>
-                <li>
-                    Kierunek: Budownictwo, studia inżynierskie
-                </li>
-            </ul>       
-        </div>
+  <div class="center-box">
+    <div class="advert">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
     </div>
-    
-    <div class="dropdown">
-        <button onclick="dropFunction()" class="dropbtn"><h2>UMIEJĘTNOŚCI</h2></button>
-        <div id="dropDown" class="dropdown-content">
-            <ul class="skills"><h4>OBSŁUGIWANE PROGRAMY</h4>
-                <li>
-                    Autodesk Revit
-                </li>
-                <li>
-                    AutoCAD
-                </li>
-                <li>
-                    Advance Steel
-                </li>
-                <li>
-                    Advance Design
-                </li>
-                <li>
-                    Robot Structural Analysis
-                </li>
-                <li>
-                    Pakiet Microsoft Office
-                </li>
-                <li>
-                    Tekla Structures
-                </li>
-                <li>
-                    Dynamo BIM
-                </li>
-            </ul>
-            <ul class="skills"><h4>INNE</h4>
-                <li>
-                    Język angielski C1
-                </li>
-                <li>
-                    Język niemiecki B2
-                </li>
-                <li>
-                    Prawo jazdy kategorii A oraz B
-                </li>
-        </div>
+    <div>
+      <p class="try-free"><span class="bolded">Try it free 7 days</span> then $20/mo. thereafter</p>
+      <div class="inputs">
+        <span class="first-input"><input type="text" placeholder="First Name" required></span>
+        <div class="warning">First Name cannot be empty</div>
+        <input type="text" placeholder="Last Name" required>
+        <div class="warning">Last Name cannot be empty</div>
+        <input id="em" type="email" placeholder="Email Address" required>
+        <div class="warning">This is not an email</div>
+        <input type="password" placeholder="Password" required>
+        <div class="warning">Password cannot be empty</div>
+        <button class="claim">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and Services</a></p>
+      </div>
     </div>
-
-    <div class="dropdown">
-        <button onclick="dropFunction2()" class="dropbtn"><h2>KONTAKT</h2></button>
-        <div id="dropDown2" class="dropdown-content">
-            <p style="margin-bottom: 0px">
-                +48 728 420 527
-            </p>
-            <p>
-                kmlkozyra@gmail.com
-            </p>
-        </div>
-    </div>
+  </div> 
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./intro.js"></script>
 </body>
 </html>
