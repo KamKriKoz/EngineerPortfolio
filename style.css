@@ -68,3 +68,15 @@ ul {
 .show {
     display: block;
 }
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
+
+button:hover {
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
